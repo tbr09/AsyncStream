@@ -13,7 +13,7 @@ namespace AsyncStream
             var r = new Random();
             while (true)
             {
-                await Task.Delay(r.Next(300));
+                await Task.Delay(r.Next(1000));
                 yield return new SensorData(r.Next(100), r.Next(100));
             }
         }
